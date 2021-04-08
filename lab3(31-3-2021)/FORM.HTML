@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM</title>
+    </head>
+    <BODY>
+        <FORM>
+           <PRE> 
+FNAME     <INPUT TYPE="TEXT" SIZE="40" MAXLENGTH="40">
+
+LNAME     <INPUT TYPE="TEXT"  SIZE="40" MAXLENGTH="40"> 
+            
+AGE       <INPUT TYPE="TEXT"  SIZE="40" MAXLENGTH="40"> 
+            
+EMAIL     <INPUT TYPE="TEXT"  SIZE="40" MAXLENGTH="40">
+            
+GENDER   <input type="radio" id="male" name="gender" value="male">MALE     <input type="radio" id="female" name="gender" value="female">FEMALE    <input type="radio" id="other" name="gender" value="other">OTHER
+ 
+SKILLS  <input TYPE="CHECKBOX" >HTML  <input TYPE="CHECKBOX" >CSS  <input TYPE="CHECKBOX" >JS 
+
+CITY   <select name="city" VALUE=""> 
+    <option>BANGALORE</option> 
+    <option>MYSORE</option> 
+    <option>DHARWAD</option></select>
+
+<input type="submit" onclick="myFunction()">        <input type="reset" onclick="func2()">
+</PRE>
+        </FORM>
+    </BODY>
+    <script>
+    function myFunction()
+{
+    alert("your form has been submitted");
+}
+function func2()
+{
+    confirm("Are you sure you want to reset");
+}
+    </script>
+</html>

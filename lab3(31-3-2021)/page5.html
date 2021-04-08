@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GUESS THE NUMBER CHALLENGE</title>
+    </body>
+</head>
+        <label>ENTER THE NUMBER</label>
+    </br>
+</br>
+        <input type="text" id="number">
+</br>
+</br>
+<p id="pi"> Click on submit </p>
+</br>
+        <input type="submit" onclick="myFunc()">
+    </body>
+    <script>
+    function myFunc()
+    {
+        var y =Math.ceil(Math.random(10,1));
+        var x = document.getElementById("number").value;
+        alert("This number is being taken");
+        if(x==y)
+            document.getElementById("pi").innerHTML="Right guess congratulations";
+        else
+        if(x<y)
+        document.getElementById("pi").innerHTML="Enter the larger number";
+        else
+        document.getElementById("pi").innerHTML="Enter the smaller number";
+    }
+    </script>
+</html>

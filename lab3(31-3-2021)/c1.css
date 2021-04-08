@@ -1,0 +1,13 @@
+td {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+  }
+  table{
+      background-color: rgb(59, 52, 52);
+      color: blanchedalmond;
+      border-color: burlywood;
+  }
+  a{
+      color: blanchedalmond;
+  }

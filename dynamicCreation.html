@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>dynamic</title>
+        <style>
+            img{
+                width: 300px;
+                height:300px;
+            }
+            h3{
+                color: white;
+                font-size: 60px;
+  text-shadow: 3px 4px 5px #000000;
+            }
+            body{
+                background-image: url("https://oecdenvironmentfocusblog.files.wordpress.com/2020/06/wed-blog-shutterstock_1703194387_low_nwm.jpg?w=640");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+        </style>
+    </head>
+    <body style="text-align: center;">
+    <h3 >Panther</h3>
+    <img onmouseover="myFunc()" src="https://i.pinimg.com/originals/a3/bf/bd/a3bfbdaa1a370cdb4a1cb11d046cd08f.jpg">
+    <p style="color: white; font-size: 18px;">move the mouse over the picture to get info</p>
+    </body>
+    <script>
+        function myFunc()
+        {
+            let d=document.createElement('p');
+            d.innerText="A black panther is the melanistic colour variant of the leopard (Panthera pardus) and the jaguar (Panthera onca). Black panthers of both species have excess black pigments, but their typical spotted markings are also present. They have been documented mostly in tropical forests, with black leopards in Kenya, India, Sri Lanka, Nepal, Thailand, Peninsular Malaysia and Java, and black jaguars in Mexico, Panama, Costa Rica and Paraguay. "
+            d.style.color = "white";
+            d.style.fontSize = "25px";
+            d.style.backgroundColor="black";
+            document.body.appendChild(d)
+        }
+        </script>
+</html>
+
+
+
+
+  
+
+

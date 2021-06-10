@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Box Game</title>
+
+    <style>
+      #ob1 {
+    width: 500px;
+    height: 500px;
+    background:#f35208;
+    border: 15px purple;
+}
+#ob1 #ob2{
+    width: 350px;
+    height: 350px;
+    background:orange;
+    border: 15px yellow
+}
+
+#ob1 #ob2 #ob3{
+    width: 120px;
+    height: 120px;
+    background:yellow;
+    border: 15px lightblue;
+}
+   
+    </style>
+
+   
+
+</head>
+<body>
+<div id="ob1" >
+    <div id="ob2">
+        <div id="ob3">
+   
+
+    </div>
+   
+  </div>
+ </div>
+
+ 
+  <script>
+      const ob1 = document.getElementById("ob1");
+      const ob2 = document.getElementById("ob2");
+      const ob3 = document.getElementById("ob3");
+      
+
+   let flag = false;
+   ob1.addEventListener('mouseenter', ()=>{
+       console.log("outermost layer");
+   });
+
+   ob2.addEventListener('mouseenter', ()=>{
+       console.log("inner layer");
+   });
+
+   ob3.addEventListener('mouseenter', ()=> {
+       console.log("core");
+   });
+   
+   
+   
+
+
+
+  </script>
+
+
+
+  </body>
+  </html>

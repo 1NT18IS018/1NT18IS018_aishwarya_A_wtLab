@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+                background: radial-gradient(#e66465, #9198e5);
+            }
+        </style>
+    </head>
+<body>
+
+<p>Please input name:</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+
+<p id="p01"></p>
+
+<script>
+function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "is empty. please enter name";
+    if(!isNaN(x)) throw "is a number. please enter name";
+    if(x != "aishwarya")   throw "is a wrong name";
+    if(x == "aishwarya")  message.innerHTML= "right name"
+  }
+  catch(err) {
+    message.innerHTML = "Input " + err;
+  }
+}
+</script>
+
+</body>
+</html>

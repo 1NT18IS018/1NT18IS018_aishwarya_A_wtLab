@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>String functions</title>
+    <style>
+        body{
+            background-image: url("https://media.istockphoto.com/photos/wooden-english-letters-background-picture-id850935974?k=6&m=850935974&s=170667a&w=0&h=uEQ81LpqGD86GGIbZHWPUb1LD-YW1ENdzKXrNCT0t5M=");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        p{
+            color:rgb(25, 31, 44);
+            font-size: 20px;
+        }
+        h1{
+            color: chocolate;
+        }
+        </style>
+</head>
+<body style="text-align: center;">
+    <h1>String functions!!!</h1>
+    <p>Below shown is the sentence where you can try out string functions</p>
+    <b>HELLO I AM AISHWARYA</b>
+    <p>Try this to find out the length</p>
+    <button onclick="findLen()">Find length</button>
+    <p id="ln"></p>
+    <p>Try to find out the first occurrence of a specified text in the sring</p>
+    <input type="text" id="fintxt" placeholder="Enter specific word.." />
+    <button onclick="findTxt()">Search</button>
+    <p id="tx"></p>
+    <p> concatenation</p>
+    <input type="text" id="conc1" placeholder="Enter specific word.." />
+    <input type="text" id="conc2" placeholder="Enter specific word.." />
+    <button onclick="conc()">concatenate</button>
+    <p id="conc3"></p>
+    <p> Reverse the order</p>
+           
+            <button onclick="myFunction()">Click</button>
+           
+            <p id="demo"></p>
+           
+            <script>
+        var str = "HELLO I AM AISHWARYA";
+        function findLen(){
+            var stlen = str.length;
+            document.getElementById("ln").innerHTML = stlen;
+        }
+        function findTxt(){
+            var txt = document.getElementById("fintxt").value;
+            var pos = str.search(`${txt}`)
+            document.getElementById("tx").innerHTML = pos;
+        }
+       
+        function conc(){
+            var str1 = document.getElementById("conc1").value;
+            var str2 = document.getElementById("conc2").value;
+            var res = str1.concat(str2);
+            document.getElementById("conc3").innerHTML = res;
+
+        }
+            var fruits = ["mango","apple","cherry","banana","orange"];
+            document.getElementById("demo").innerHTML = fruits;
+           
+            function myFunction() {
+              fruits.reverse();
+              document.getElementById("demo").innerHTML = fruits;
+            }
+            </script>
+
+</body>
+</html>

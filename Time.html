@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> Square of a number</title>
+        <style>
+            body{
+                color:white;
+                font-size: 20px;
+                background-image: url("https://i.pinimg.com/originals/63/11/ed/6311edb6f3a600c9f4a23c35473788a4.jpg");
+                text-align: center;
+            }
+            .m{
+                text-align: center;
+                background-color: rgb(27, 26, 26);
+                border-color: blanchedalmond;
+                width: 600px;
+            }
+            .n
+            {
+                text-align: center;
+                background-color: rgb(27, 26, 26);
+                border-color: blanchedalmond;
+                width: 600px;
+            }
+        </style>
+    </head>
+    <body onload="startTime()">
+        <h14>TIME:</h4>
+        <div id="txt"></div>
+        <div class="m">
+        <h3>MATH OBJECT USAGE</h3>
+        <label>Enter the number</label>
+        <br>
+        <br>
+        <input type="text" id="nos"><br><br>
+        <button onclick="myFunc()">answer</button>
+        <br><br>
+        <h3>SQUARE:</h3>
+        <p id="ans"></p>
+        <h3>ROUNDED VALUE:</h3>
+        <p id="ans2"></p>
+        <h3>SIN:</h3>
+        <p id="ans3"></p>
+        <h3>SQUARE ROOT:</h3>
+        <p id="ans4"></p>
+        <h3>LOG:</h3>
+        <p id="ans5"></p>
+        </div>
+    </body>
+    <script>
+        function myFunc()
+        {
+        var no = document.getElementById("nos").value;
+    var ans = Math.pow(no,2);
+    var ans2 = Math.round(no);
+    var ans3 = Math.sin(no);
+    var ans4 = Math.sqrt(no);
+    var ans5 = Math.log(no);
+        document.getElementById("ans").innerHTML=ans;
+        document.getElementById("ans2").innerHTML=ans2;
+        document.getElementById("ans3").innerHTML=ans3;
+        document.getElementById("ans4").innerHTML=ans4;
+        document.getElementById("ans5").innerHTML=ans5;
+        }
+        function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 1000);
+}
+    </script>
+</html>
